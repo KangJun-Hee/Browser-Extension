@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "firstChromeExtension",
+  "description": "my very first extension",
+  "version": "1.0",
+  "icons": {
+    "16": "/폴더명/파일명22.png",
+    "48": "/폴더명/파일명34.png",
+    "128": "/폴더명/파일명15.png"
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "/폴더명/파일명4d.png",
+      "48": "/폴더명/파일명25.png",
+      "128": "/폴더명/파일명65.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "css": ["css파일명.css"]
+    }
+  ]
+}
